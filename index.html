@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Keyboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel ="shortcut icon" href="favicon.ico">
+</head>
+<body>
+    <header class="header">
+        <div class="wrapper">
+            <a href="#" class="logo"> <img src="img/logo.svg" width="100px" height="45px" alt="logo" ></a>
+            <a href="#"><div class="title">JS Keyboard</div></a>
+        </div> 
+    </header>
+
+    <img src="img/ru.png" width="50px" height="30px" id="menu-btn">
+    <nav class="lang-select">
+        <a href="lang/eng/index.html"><img src="img/eng.png" width="50px" height="30px"><div class="lang">English</div></a>
+    </nav>
+        
+    <div class="container">
+        <div class="stats">
+            <p>Время:<span id="timer">60</span></p>
+            <p>Ошибки:<span id="mistakes">0</span></p>
+        </div>
+
+        <div 
+        id="quote">
+        </div>
+        
+        <textarea rows="3" id="quote-input" placeholder="Печатать текст"></textarea>
+        
+        <button id="start-test" onclick="startTest()">Начать</button>
+        <button id="stop-test" onclick="displayResult()">Стоп</button>
+        <button id="restart-test" onclick="restartTest()">Заново</button>
+
+        <div class="result">
+            <h3>Результат:</h3>
+            <div class="wrapper">
+                <p>Точность: <span id="accuracy"></span> </p>
+                <p>Скорость: <span id="wpm"></span> </p>
+            </div>
+
+        </div>
+    </div>
+    
+    <footer class="footer">
+       <div class="credits">created by Alexander Kremenskov</div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
