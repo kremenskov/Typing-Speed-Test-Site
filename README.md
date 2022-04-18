@@ -5,7 +5,7 @@
 2. **Error counter and text highlighting.** Errors are counted, their number is displayed on the screen along with the percentage of typing accuracy. Correctly typed text is highlighted in green, errors in red.
 3. **Language select.** Site is available in two languages: English/Russian. User can change language at any time by using the button.
 ---
-## Built with JS, CSS, HTML.
+## Built with JS, CSS, HTML
 
 
 
