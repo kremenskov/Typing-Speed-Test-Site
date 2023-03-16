@@ -146,10 +146,15 @@ userInput.addEventListener("input", () => {
 
         });
 
+        if (quoteChars.length === userInputChars.length) {
+            displayResult()
+        }
+
         if (check) {
             displayResult();
                
         }
+
     });
 })
 
